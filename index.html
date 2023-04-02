@@ -1,0 +1,38 @@
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+	<style>
+	.scanlines {
+			position: relative;
+		}
+
+		.scanlines:after {
+  		background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 1px, #ccc 1px, #ccc 2px);
+  		background-size: 100% 2px, cover;
+  		-webkit-transform-origin: 50% 50%;
+  		        transform-origin: 50% 50%;
+  		-webkit-transform: rotate(0deg);
+  		        transform: rotate(0deg);
+  		content: '';
+  		opacity: 0.1;
+  		position: absolute;
+  		top: 0;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+		}
+	</style>
+</head>
+
+<body style="background: #000">
+	<div style="display: flex; justify-content: center; align-items: center; height: 100%">
+		<div id="app" class="scanlines"></div>
+	</div>
+
+	<script src="src/index.ts">
+	</script>
+</body>
+
+</html>
